@@ -32,6 +32,72 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+#banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    background-color: #f4f4f4; /* Color de fondo, puedes ajustarlo */
+}
+
+#banner .content {
+    max-width: 960px; /* Limita el ancho en pantallas grandes */
+    padding: 20px;
+}
+
+#banner header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#banner header p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+#banner .image {
+    margin-top: 20px;
+}
+
+#banner .image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media Query para pantallas grandes (PC) */
+@media (min-width: 1024px) {
+    #banner .content {
+        text-align: left; /* Alineación a la izquierda en pantallas grandes */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #banner header {
+        width: 50%; /* Deja espacio para la imagen */
+    }
+
+    #banner .image {
+        width: 45%; /* Ajusta el tamaño de la imagen */
+    }
+}
+
+/* Media Query para pantallas pequeñas (móviles y tabletas) */
+@media (max-width: 1023px) {
+    #banner header {
+        font-size: 1.5rem;
+    }
+
+    #banner header h2 {
+        font-size: 1.8rem;
+    }
+
+    #banner header p {
+        font-size: 1rem;
+    }
+}
 
 ol, ul {
 	list-style: none;
